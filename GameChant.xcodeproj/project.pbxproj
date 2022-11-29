@@ -15,6 +15,9 @@
 		8958D6C729365FEA002BC16A /* everton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6C629365FEA002BC16A /* everton.mp3 */; };
 		8958D6CB29366019002BC16A /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6CA29366019002BC16A /* Teams.swift */; };
 		8958D6CE29366411002BC16A /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6CD29366411002BC16A /* ChantsViewController.swift */; };
+		8958D6D129366C92002BC16A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6D029366C92002BC16A /* Team.swift */; };
+		8958D6D329366CE7002BC16A /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6D229366CE7002BC16A /* Manager.swift */; };
+		8958D6D629366DC4002BC16A /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6D529366DC4002BC16A /* TeamsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8958D6C629365FEA002BC16A /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
 		8958D6CA29366019002BC16A /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		8958D6CD29366411002BC16A /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
+		8958D6D029366C92002BC16A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		8958D6D229366CE7002BC16A /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		8958D6D529366DC4002BC16A /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		8958D6AF293659FA002BC16A /* GameChant */ = {
 			isa = PBXGroup;
 			children = (
+				8958D6D429366DB5002BC16A /* ViewModel */,
+				8958D6CF29366C5D002BC16A /* Model */,
 				8958D6CC293663E6002BC16A /* ViewControllers */,
 				8958D6C829365FF8002BC16A /* Resources */,
 				8958D6B0293659FA002BC16A /* AppDelegate.swift */,
@@ -95,6 +103,23 @@
 				8958D6CD29366411002BC16A /* ChantsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8958D6CF29366C5D002BC16A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8958D6D029366C92002BC16A /* Team.swift */,
+				8958D6D229366CE7002BC16A /* Manager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8958D6D429366DB5002BC16A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8958D6D529366DC4002BC16A /* TeamsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8958D6CE29366411002BC16A /* ChantsViewController.swift in Sources */,
+				8958D6D629366DC4002BC16A /* TeamsViewModel.swift in Sources */,
+				8958D6D329366CE7002BC16A /* Manager.swift in Sources */,
 				8958D6CB29366019002BC16A /* Teams.swift in Sources */,
 				8958D6B1293659FA002BC16A /* AppDelegate.swift in Sources */,
+				8958D6D129366C92002BC16A /* Team.swift in Sources */,
 				8958D6B3293659FA002BC16A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
