@@ -13,6 +13,8 @@
 		8958D6B8293659FA002BC16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6B6293659FA002BC16A /* Main.storyboard */; };
 		8958D6BA293659FE002BC16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6B9293659FE002BC16A /* Assets.xcassets */; };
 		8958D6BD293659FE002BC16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6BB293659FE002BC16A /* LaunchScreen.storyboard */; };
+		8958D6C729365FEA002BC16A /* everton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6C629365FEA002BC16A /* everton.mp3 */; };
+		8958D6CB29366019002BC16A /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6CA29366019002BC16A /* Teams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8958D6B9293659FE002BC16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8958D6BC293659FE002BC16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8958D6BE293659FE002BC16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8958D6C629365FEA002BC16A /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
+		8958D6CA29366019002BC16A /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		8958D6AF293659FA002BC16A /* GameChant */ = {
 			isa = PBXGroup;
 			children = (
+				8958D6C829365FF8002BC16A /* Resources */,
 				8958D6B0293659FA002BC16A /* AppDelegate.swift */,
 				8958D6B2293659FA002BC16A /* SceneDelegate.swift */,
 				8958D6B4293659FA002BC16A /* ViewController.swift */,
@@ -65,6 +70,23 @@
 				8958D6BE293659FE002BC16A /* Info.plist */,
 			);
 			path = GameChant;
+			sourceTree = "<group>";
+		};
+		8958D6C829365FF8002BC16A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8958D6C929366000002BC16A /* Chants */,
+				8958D6CA29366019002BC16A /* Teams.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8958D6C929366000002BC16A /* Chants */ = {
+			isa = PBXGroup;
+			children = (
+				8958D6C629365FEA002BC16A /* everton.mp3 */,
+			);
+			path = Chants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8958D6BD293659FE002BC16A /* LaunchScreen.storyboard in Resources */,
+				8958D6C729365FEA002BC16A /* everton.mp3 in Resources */,
 				8958D6BA293659FE002BC16A /* Assets.xcassets in Resources */,
 				8958D6B8293659FA002BC16A /* Main.storyboard in Resources */,
 			);
@@ -138,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8958D6CB29366019002BC16A /* Teams.swift in Sources */,
 				8958D6B5293659FA002BC16A /* ViewController.swift in Sources */,
 				8958D6B1293659FA002BC16A /* AppDelegate.swift in Sources */,
 				8958D6B3293659FA002BC16A /* SceneDelegate.swift in Sources */,
