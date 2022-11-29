@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		8958D6B1293659FA002BC16A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6B0293659FA002BC16A /* AppDelegate.swift */; };
 		8958D6B3293659FA002BC16A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6B2293659FA002BC16A /* SceneDelegate.swift */; };
-		8958D6B5293659FA002BC16A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6B4293659FA002BC16A /* ViewController.swift */; };
 		8958D6B8293659FA002BC16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6B6293659FA002BC16A /* Main.storyboard */; };
 		8958D6BA293659FE002BC16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6B9293659FE002BC16A /* Assets.xcassets */; };
 		8958D6BD293659FE002BC16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6BB293659FE002BC16A /* LaunchScreen.storyboard */; };
 		8958D6C729365FEA002BC16A /* everton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8958D6C629365FEA002BC16A /* everton.mp3 */; };
 		8958D6CB29366019002BC16A /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6CA29366019002BC16A /* Teams.swift */; };
+		8958D6CE29366411002BC16A /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958D6CD29366411002BC16A /* ChantsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8958D6AD293659FA002BC16A /* GameChant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameChant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8958D6B0293659FA002BC16A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8958D6B2293659FA002BC16A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8958D6B4293659FA002BC16A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8958D6B7293659FA002BC16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8958D6B9293659FE002BC16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8958D6BC293659FE002BC16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8958D6BE293659FE002BC16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8958D6C629365FEA002BC16A /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
 		8958D6CA29366019002BC16A /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		8958D6CD29366411002BC16A /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +60,10 @@
 		8958D6AF293659FA002BC16A /* GameChant */ = {
 			isa = PBXGroup;
 			children = (
+				8958D6CC293663E6002BC16A /* ViewControllers */,
 				8958D6C829365FF8002BC16A /* Resources */,
 				8958D6B0293659FA002BC16A /* AppDelegate.swift */,
 				8958D6B2293659FA002BC16A /* SceneDelegate.swift */,
-				8958D6B4293659FA002BC16A /* ViewController.swift */,
 				8958D6B6293659FA002BC16A /* Main.storyboard */,
 				8958D6B9293659FE002BC16A /* Assets.xcassets */,
 				8958D6BB293659FE002BC16A /* LaunchScreen.storyboard */,
@@ -87,6 +87,14 @@
 				8958D6C629365FEA002BC16A /* everton.mp3 */,
 			);
 			path = Chants;
+			sourceTree = "<group>";
+		};
+		8958D6CC293663E6002BC16A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8958D6CD29366411002BC16A /* ChantsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8958D6CE29366411002BC16A /* ChantsViewController.swift in Sources */,
 				8958D6CB29366019002BC16A /* Teams.swift in Sources */,
-				8958D6B5293659FA002BC16A /* ViewController.swift in Sources */,
 				8958D6B1293659FA002BC16A /* AppDelegate.swift in Sources */,
 				8958D6B3293659FA002BC16A /* SceneDelegate.swift in Sources */,
 			);
