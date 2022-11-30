@@ -32,13 +32,15 @@ class ChantsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .white
     }
 
 }
 
 private extension ChantsViewController {
     func setup() {
+        self.navigationController?.navigationBar.topItem?.title = "Football Chants"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
 
         tableVw.dataSource = self
 
