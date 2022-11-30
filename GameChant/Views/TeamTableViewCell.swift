@@ -85,15 +85,15 @@ class TeamTableViewCell: UITableViewCell {
         containerVw.layer.cornerRadius = 10
     }
 
-    func configure() {
-        containerVw.backgroundColor = TeamType.everton.background
+    func configure(with item: Team) {
+        containerVw.backgroundColor = item.id.background
 
-        badgeImgVw.image = TeamType.everton.badge
-        playbackBtn.setImage(UIImage(systemName: "play.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32)), for: .normal)
-        nameLbl.text = "Everton"
-        foundedLbl.text = "1800"
-        jobLbl.text = "Current Manager: Mikel Arteta"
-        infoLbl.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        badgeImgVw.image = item.id.badge
+        playbackBtn.setImage(item.isPlaying ? Assets.pause : Assets.play, for: .normal)
+        nameLbl.text = item.name
+        foundedLbl.text = item.founded
+        jobLbl.text = "Current \(item.manager.job.rawValue): \(item.manager.name)"
+        infoLbl.text = item.info
 
         self.contentView.addSubview(containerVw)
 
