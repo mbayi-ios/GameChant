@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol TeamTableViewCellDelegate: class {
+    func didTapPlayback(for team: Team)
+}
+
+
 class TeamTableViewCell: UITableViewCell {
 
  static let cellId = "TeamTableViewCell"
@@ -78,6 +83,9 @@ class TeamTableViewCell: UITableViewCell {
         return lbl
     }()
 
+    private weak var delegate: TeamTableViewCellDelegate?
+    private var team: Team?
+
     // MARK: - LifeCycle
 
     override func layoutSubviews() {
@@ -85,7 +93,20 @@ class TeamTableViewCell: UITableViewCell {
         containerVw.layer.cornerRadius = 10
     }
 
-    func configure(with item: Team) {
+   override func prepareForReuse() {
+        super.prepareForReuse()
+        self.team = nil
+        self.delegate = nil
+        self.contentView.subviews.forEach { $0.removeFromSuperview()}
+    }
+
+    func configure(with item: Team, delegate: TeamTableViewCellDelegate) {
+
+        self.team = item
+        self.delegate = delegate
+
+        playbackBtn.addTarget(self, action: #selector(didTapPlayback), for: .touchUpInside)
+
         containerVw.backgroundColor = item.id.background
 
         badgeImgVw.image = item.id.badge
@@ -130,5 +151,10 @@ class TeamTableViewCell: UITableViewCell {
         ])
     }
 
+    @objc func didTapPlayback() {
+        if let team = team {
+            delegate?.didTapPlayback(for: team)
+        }
+    }
 
 }
